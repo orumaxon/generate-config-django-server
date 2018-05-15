@@ -1,6 +1,28 @@
 # generate-config-django-server
 Generate config files nginx, supervisor and uwsgi for django project.
 
+Configuration use next structure django project:
+```bash
+/home/
+    ProjectDir/         - Folder for Project and logs
+        ProjectDir/     - Base dir Django Project
+            ...
+            media/
+            static/
+            manage.py
+    env/                - Envirement
+        bin/
+            activate
+            ...
+        ...
+    logs/               - Folders for all logs
+        nginx/
+        supervisor/
+    file.pid            - Pid file
+    file.sock           - Sock file
+```
+
+
 ## nginx example .conf
 
 ```bash
