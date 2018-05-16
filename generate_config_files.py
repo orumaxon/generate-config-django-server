@@ -47,8 +47,8 @@ def nginx():
     nginx_access_logs = os.path.join(base_dir, nginx_logs, 'access.log')
     nginx_error_logs = os.path.join(base_dir, nginx_logs, 'error.log')
 
-    media = os.path.join(base_dir, project_name, 'media')
-    static = os.path.join(base_dir, project_name, 'static')
+    media = os.path.join(base_dir, project_name)
+    static = os.path.join(base_dir, project_name)
 
     config = nginx_config.format(upstream_name=upstream_name,
                                  server_name=server_name,
