@@ -1,16 +1,16 @@
 #! /usr/bin/python
 # -*- coding:utf-8 -*-
 
-base_dir = '/home/maxes/MyProjects/MaxesBlog'
-project_name = 'MaxesBlog'
+base_dir = '/home/user/path_to_project'
+project_name = 'MyProject'
 
 upstream_name = project_name.lower()
 server_name = upstream_name + '.*'
 
-sock_file = 'maxesblog.sock'
-pid_file = 'maxesblog.pid'
+sock_file = 'my_project.sock'
+pid_file = 'my_project.pid'
 numprocs = 1
 
 env_name = 'env'
-user = 'maxes'
+user = 'username'
 processes = 1
